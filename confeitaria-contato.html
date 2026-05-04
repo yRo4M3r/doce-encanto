@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width">
+		<title>Doce Encanto</title>
+		<link rel="stylesheet" href="reset.css">
+        <link rel="stylesheet" href="confeitaria-style.css">
+		<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+	</head>		
+	<body class="pagina-contato">
+		<header>
+            <div class="caixa">
+                <div class="logo-area">
+                    <img src="imagens/logo.png" alt="Logo da Doce Encanto">
+                    <p class="id">Doce Encanto</p>
+                </div>
+
+                <nav>
+                    <ul class="navegacao">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="confeitaria-produtos.html">Produtos</a></li>
+                        <li><a href="confeitaria-contato.html" class="ativo">Contato</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <main>
+            <section class="titulo-contato">
+                <h1>Faça seu Pedido</h1>
+                <p>Preencha o formulário abaixo e entraremos em contato em breve.</p>
+            </section>
+
+            <section class="container-contato">
+                <div class="formulario-contato">
+                    <form>
+                        <div class="dados-pessoais">
+                            <h3>Dados Pessoais</h3>
+
+                            <div class="linha">
+                                <div class="campo">
+                                    <label>Nome Completo *</label>
+                                    <input type="text" id="nome" name="nome" required>
+                                </div>
+
+                                <div class="campo">
+                                    <label>E-mail *</label>
+                                    <input type="email" id="email" name="email" required>
+                                </div>
+                            </div>
+
+                            <div class="campo">
+                                <label>Telefone *</label>
+                                <input type="tel" id="telefone" name="telefone" required>
+                            </div>
+                        </div>
+
+                        <div class="detalhes-pedido">
+                            <h3>Detalhes do Pedido</h3>
+
+                            <div class="linha">
+                                <div class="campo">
+                                    <label>Produto *</label>
+                                
+                                    <select id="produto" name="produto" required>
+                                        <option value="" disabled selected>Selecione um produto</option>
+
+                                        <optgroup label="Bolos">
+                                            <option>Bolo de Chocolate - R$65,00</option>
+                                            <option>Bolo de Morango - R$70,00</option>
+                                            <option>Bolo Red Velvet - R$75,00</option>
+                                        </optgroup>
+
+                                        <optgroup label="Cookies">
+                                            <option>Cookie de Baunilha - R$12,00</option>
+                                            <option>Cookie de Chocolate - R$15,00</option>
+                                            <option>Cookie Red Velvet - R$18,00</option>
+                                        </optgroup>
+
+                                        <optgroup label="Sonhos">
+                                            <option>Sonho de Creme - R$13,00</option>
+                                            <option>Sonho de Doce de Leite - R$14,00</option>
+                                            <option>Sonho de Chocolate - R$15,00</option>
+                                        </optgroup>
+
+                                    </select>
+                                </div>
+                                
+                                <div class="campo">
+                                    <label>Quantidade *</label>
+                                    <input type="number" id="quantidade" name="quantidade" min="1" required>                                </div>
+                            </div>
+
+                            <div class="campo">
+                                <label for="observacoes">Observações</label>
+                                <textarea id="observacoes" name="observacoes"></textarea>
+                            </div>
+
+
+                        </div>
+
+                        <div class="endereco-entrega">
+                            <h3>Endereço de Entrega</h3>
+
+                            <div class="campo">
+                                <label>CEP *</label>
+                                <input type="text" id="cep" name="cep" required>
+                            </div>
+
+                            <div class="linha">
+                                <div class="campo">
+                                    <label>Cidade *</label>
+                                    <input type="text" id="cidade" name="cidade" required>
+                                </div>
+
+                                <div class="campo">
+                                    <label>Estado *</label>
+                                    <input type="text" id="estado" name="estado" required>
+                                </div>
+                            </div>
+
+                            <div class="campo">
+                                <label>Endereço Completo*</label>
+                                <input type="text" id="endereco" name="endereco" required>
+                            </div>
+                        </div>
+
+                        <div class="forma-pagamento">
+                            <h3> Forma de Pagamento</h3>
+
+                            <div class="campo">
+                                <label>Selecione a forma de pagamento *</label>
+
+                                <select id="pagamento" name="pagamento" required>
+                                    <option value="" disabled selected>Selecione a forma de pagamento</option>
+
+                                    <optgroup label="Pagar Agora">
+                                        <option>Pix</option>
+                                        <option>Cartão de Débito</option>
+                                        <option>Cartão de Crédito</option>
+                                    </optgroup>
+
+                                    <optgroup label="Pagar na Entrega">
+                                        <option>Dinheiro</option>
+                                        <option>Cartão de Débito</option>
+                                        <option>Cartão de Crédito</option>
+                                    </optgroup>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="botao-enviar">
+                            <button type="submit">Enviar Pedido</button>
+                        </div>
+                    </form>
+                </div>
+
+            </section>
+
+        </main>
+
+		<footer>
+            <p class="copyright">&copy; 2026 Doce Encanto Confeitaria. Todos os direitos reservados</p>
+        </footer>
+
+	</body>
+</html>
